@@ -292,3 +292,5 @@ pre-commit run --all-files
 
 ArtemSBulgakov/buildozer-action is released under the terms of the
 [MIT License](LICENSE).
+
+# Other
