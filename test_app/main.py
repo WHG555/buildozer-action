@@ -1,17 +1,22 @@
-"""
-Simple Hello World app to test Buildozer Action.
-
-It builds Kivy app with file main.kv.
-"""
-
+import kivy
 from kivy.app import App
-from kivy.lang import Builder
+from kivy.uix.label import Label
+from kivy.uix.button import Button
+from kivy.core.window import Window
+from kivy.uix.boxlayout import BoxLayout
 
-
-class MainApp(App):
+class ROwidget(App):
     def build(self):
-        return Builder.load_file("main.kv")
+        Window.fullscreen = 1
+        self.title="title"
 
+        self.layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
+        label1 = Label(text="ROwidget")
+        button1 = Button(text="Kivy")
 
-if __name__ == "__main__":
-    MainApp().run()
+        self.layout.add_widget(label1)
+        self.layout.add_widget(button1)
+        return self.layout
+
+if __name__ == '__main__':
+    ROwidget().run()
