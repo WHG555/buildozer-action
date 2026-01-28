@@ -24,7 +24,7 @@ jobs:
           path: master
 
       - name: Build with Buildozer
-        uses: ArtemSBulgakov/buildozer-action@v1.2.0 # WHG555/buildozer-action@v1
+        uses: n8marti/buildozer-action@fix-user-doesnt-exist # WHG555/buildozer-action@v1
         id: buildozer
         with:
           repository_root: master
